@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 File Upload
+  p upload a file to see its size
+  form(action='/', method='post', enctype='multipart/form-data')
+    div.input
+      input(type='file', name='file_upload')
+    div.actions
+      input(type='submit')
